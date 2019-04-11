@@ -1,0 +1,16 @@
+#include <string>
+#include <fstream>
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	ifstream in("Scopy.cpp");
+	ofstream out("Scopy2.cpp");
+	string s;
+	while(getline(in, s)){
+		out << s << "\n";
+		cout << s << endl;	
+	}
+	
+}
